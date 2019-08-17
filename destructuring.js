@@ -22,6 +22,7 @@ var carDetails = {
 */
 
 //Code Here
+const { color, make, model, year } = carDetails
 
 
 
@@ -33,9 +34,9 @@ var carDetails = {
   The property names are firstName, lastName, and title.
 */
 
-function greeting( obj ) {
+function greeting(obj) {
   //Code Here
-  
+  const { firstName, lastName, title } = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -52,23 +53,36 @@ function greeting( obj ) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
+// const states = {
+//   utah: 1,
+//   california: 2,
+//   texas: 3,
+//   arizona: 4,
+// //Code Here
 
-//Code Here
 
+function totalPopulation(object) {
+  const { utah, california, texas, arizona } = object
+  return utah + california + texas + arizona
+}
 
 
 ////////// PROBLEM 4 //////////
 
 /*
-  Write a function called ingredients that will take in an object. 
-  This object will have 3 properties named carb, fat, and protein. 
-  The property values will be strings. 
-  Use object destructuring to save the property values to new variables. 
-  Push these new variables to an array and return the array. 
+  Write a function called ingredients that will take in an object.
+  This object will have 3 properties named carb, fat, and protein.
+  The property values will be strings.
+  Use object destructuring to save the property values to new variables.
+  Push these new variables to an array and return the array.
 */
 
 //Code Here
-
+function ingredients(object) {
+  const { carb, fat, protein } = object //destructuring is pulling data out of the object and not putting them on the object variable.
+  const newarr = [carb, fat, protein ]
+  return newarr
+}
 
 
 ////////// PROBLEM 5 //////////
@@ -86,7 +100,11 @@ function greeting( obj ) {
 */
 
 //Code Here
-
+// save for later when i actually know how to do for loops
+// fucntion largeNumbers({first, second, third}){
+  
+//   return 
+// }
 
 
 ////////// PROBLEM 6 //////////
