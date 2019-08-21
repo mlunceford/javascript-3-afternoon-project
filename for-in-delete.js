@@ -64,7 +64,7 @@ function showValues( obj ) {
 
 //Code Here
 function greaterThan10(object){
-  
+  for(let key in )
 }
 
 
@@ -100,17 +100,17 @@ function greaterThan10(object){
   Uncomment the example below to see a for in loop deleting all the properties inside an object.
 */
 
-// var deleteAllThethings = {
-//   one: 1,
-//   two: 2,
-//   three: 3
-// }
+var deleteAllThethings = {
+  one: 1,
+  two: 2,
+  three: 3
+}
 
-// for(var key in deleteAllThethings) {
-//   delete deleteAllThethings[key]
-// }
+for(var key in deleteAllThethings) {
+  delete deleteAllThethings[key]
+}
 
-// console.log(deleteAllThethings)
+console.log(deleteAllThethings)
 
 
 
@@ -122,6 +122,15 @@ function greaterThan10(object){
 */
 
 //Code Here
+const removePassword = obj => {
+  for(let key in obj){
+    if(key === 'password'){
+      delete obj[key]
+    }
+  }
+  return obj
+
+}
 
 
 
@@ -141,7 +150,6 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
-
 
 
 ////////// PROBLEM 7 //////////

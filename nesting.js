@@ -139,8 +139,16 @@ var myCar = {
 */
 
 //Code Here
-
-
+// mmm we went through this with andrew. this if statement is checking for the atfaultforaccident if this exists in the array. were saying if this exist execute this = false
+function recordCleaner(){
+  for(let i = 0; i < myCar.accidents.length; i++){
+    if(myCar.accidents[i].atFaultForAccident){
+      myCar.accidents[i].atFaultForAccident = false
+    }
+  }
+}
+recordCleaner()
+console.log(myCar)
 
 ////////// PROBLEM 5 //////////
 
