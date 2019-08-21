@@ -41,6 +41,7 @@ for(var key in values) {
 
 function showValues( obj ) {
   //Code Here
+  for(let )
   let code = ''
   for(let key in obj){
     code += obj[key]
@@ -50,7 +51,7 @@ function showValues( obj ) {
 }
 // console.log(showValues(values))
 
-// let stringThing = showValues(values)
+let stringThing = showValues(values)
 
 
 
@@ -64,7 +65,7 @@ function showValues( obj ) {
 
 //Code Here
 function greaterThan10(object){
-  for(let key in )
+  for(let key in object)
 }
 
 
@@ -129,7 +130,6 @@ const removePassword = obj => {
     }
   }
   return obj
-
 }
 
 
