@@ -20,11 +20,6 @@ let product = {
 // code here
 let productCopy = {...product}
 
-// // mmmmmm my stuff below
-// let neMixednumbers = [...midNumbers] // spreading array
-// let newUser = {...user} // spreading obj
-// et newUser = [{...user}, {...user}, {...user}] //spreading an obj into an array
-
 ////////// PROBLEM 2 //////////
 
 /* Use the spread operator to create a copy of the colors array below.  Name the copy "colorsCopy" */
@@ -57,4 +52,4 @@ let arr1 = ['dog', 'chameleon', 'monkey'];
 let arr2 = ['bear', 'tiger', 'liger'];
 
 // code here
-let combinedArrays = [...arr1, ...arr2];
+let combinedArrays = [...arr1, ...arr2]

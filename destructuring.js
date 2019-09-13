@@ -53,16 +53,10 @@ function greeting(obj) {
   Use object destructuring to save the property values to new variables.
   Sum up the values and return the total number.
 */
-// const states = {
-//   utah: 1,
-//   california: 2,
-//   texas: 3,
-//   arizona: 4,
-// //Code Here
 
-
-function totalPopulation(object) {
-  const { utah, california, texas, arizona } = object
+//Code Here
+const totalPopulation = obj => {
+  const { utah, california, texas, arizona } = obj
   return utah + california + texas + arizona
 }
 
@@ -70,18 +64,18 @@ function totalPopulation(object) {
 ////////// PROBLEM 4 //////////
 
 /*
-  Write a function called ingredients that will take in an object.
-  This object will have 3 properties named carb, fat, and protein.
-  The property values will be strings.
-  Use object destructuring to save the property values to new variables.
-  Push these new variables to an array and return the array.
+  Write a function called ingredients that will take in an object. 
+  This object will have 3 properties named carb, fat, and protein. 
+  The property values will be strings. 
+  Use object destructuring to save the property values to new variables. 
+  Push these new variables to an array and return the array. 
 */
 
 //Code Here
-function ingredients(object) {
-  const { carb, fat, protein } = object //destructuring is pulling data out of the object and not putting them on the object variable.
-  const newarr = [carb, fat, protein ]
-  return newarr
+const ingredients = (obj) => {
+  const { carb, fat, protein } = obj
+  const newVar = [carb, fat, protein]
+  return newVar
 }
 
 
@@ -100,11 +94,10 @@ function ingredients(object) {
 */
 
 //Code Here
-// mmm save for later when i actually know how to do for loops
-// fucntion largeNumbers({first, second, third}){
-  
-//   return 
-// }
+const largeNumbers = ({ first, second, third }) => {
+  const arr = [first, second, third]
+  return Math.min(...arr)
+}
 
 
 ////////// PROBLEM 6 //////////
@@ -116,5 +109,13 @@ function ingredients(object) {
 */
 
 //Code Here
-
+const numberGroups = ({ a, b, c }) => {
+  if (Math.max(a.length, b.length, c.length) === a.length) {
+    return a;
+  } else if (Math.max(a.length, b.length, c.length) === b.length) {
+    return b;
+  } else {
+    return c
+  }
+}
 
